@@ -1,0 +1,26 @@
+.form-container {
+  width: 100%;
+  label {
+    font-family: Clear Sans;
+    line-height: 21px;
+    font-size: 16px;
+    color: $black;
+    margin-bottom: 4px;
+  }
+  input {
+    line-height: 21px;
+    font-size: 16px;
+    color:$black;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.18);
+    }
+    &:focus {
+      border: 1px solid #3764EB;
+    }
+  }
+}

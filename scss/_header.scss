@@ -1,0 +1,45 @@
+header {
+  padding-top: 32px;
+  .row{
+    align-items: center;
+  }
+  .logo {
+    width: 195px;
+    @media(max-width:991px){
+      width: 170px;
+    }
+    path {
+      fill: $blue;
+      transition: all .3s;
+    }
+    &:hover {
+      path {
+        fill: $deepBlue;
+
+      }
+    }
+  }
+  .lang{
+    color: white;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .menu{
+    margin-left: 44px;
+    @media(max-width:991px){
+      margin-left: 32px;
+    }
+    svg{
+      path{
+        fill:white
+      }
+    }
+    &:hover{
+      svg{
+        path{
+          fill:$deepBlue
+        }
+      }
+    }
+  }
+}

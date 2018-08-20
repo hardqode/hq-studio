@@ -1,0 +1,42 @@
+.button{
+  padding: 16px 40px 15px ;
+  outline: none !important;
+  transition: all .3s;
+  &.btn-s{
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+  font-size: 18px;
+  line-height: normal;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  &.btn-blue{
+    background-color: $blue;
+    color: white;
+    &:hover,&:active{
+      background-color: $deepBlue;
+    }
+  }
+  &.btn-outline-white{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.4);
+    &:hover{
+      border: 1px solid #fff;
+    }
+  }
+  &.btn-outline-blue{
+    color: $blue;
+    background-color: transparent;
+    border: 1px solid rgba(55,100,235,.4);
+    &:hover{
+      color:$deepBlue;
+      border: 1px solid $deepBlue;
+    }
+  }
+  &[disabled]{
+    border: 0;
+    background-color: #898989;
+    color: rgba(26,26,26,.2);
+  }
+}

@@ -1,0 +1,16 @@
+$black:#1a1a1a;
+$blackBG:#17181B;
+$gray:#898989;
+$blue:#3764EB;
+$deepBlue:#2852CF;
+*{
+  font-family: "Clear Sans";
+}
+.black-themed{
+  color: white;
+  background-color: $blackBG;
+}
+.white-themed{
+  color: $black;
+  background-color: white;
+}

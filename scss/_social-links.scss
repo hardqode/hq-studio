@@ -1,0 +1,33 @@
+.social-links--block{
+  a{
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+    &:hover{
+      text-decoration: none;
+    }
+    &:first-of-type{
+      margin-left: 0;
+    }
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  &.black-themed{
+    svg{
+      fill:rgba(255,255,255,.3);
+      transition: all .3s;
+      &:hover{
+        fill:#fff;
+      }
+    }
+  }
+  &.white-themed{
+    svg{
+      fill:rgba(26,26,26,.3);
+      transition: all .3s;
+      &:hover{
+        fill:$deepBlue;
+      }
+    }
+  }
+}

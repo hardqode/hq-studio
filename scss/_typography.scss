@@ -1,0 +1,70 @@
+.display-1 {
+  font-family: Gilroy;
+  font-weight: bold;
+  line-height: 76px;
+  font-size: 72px;
+  color: inherit;
+  .link{
+    font-family: Gilroy;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  @media(max-width: 991px){
+    font-size: 40px;
+    line-height: 39px;
+  }
+}
+
+.display-2 {
+  font-family: Gilroy;
+  line-height: 59px;
+  font-weight: bold;
+  font-size: 56px;
+  @media(max-width: 991px){
+    font-size: 40px;
+    line-height: 39px;
+  }
+  color: inherit;
+}
+
+.display-3 {
+  font-family: Gilroy;
+  line-height: 44px;
+  font-weight: bold;
+  font-size: 42px;
+  color: inherit;
+}
+
+.display-4 {
+  font-family: Gilroy;
+  line-height: normal;
+  font-weight: bold;
+  font-size: 32px;
+}
+.display-5{
+  font-family: Gilroy;
+  line-height: normal;
+  font-weight: bold;
+  font-size: 22px;
+  color: inherit;
+}
+.display-p{
+  font-family: Clear Sans;
+  line-height: 21px;
+  font-size: 16px;
+  color: inherit;
+  &.descriptor{
+    opacity: .5;
+  }
+}
+.link{
+  font-family: Clear Sans;
+  line-height: normal;
+  font-size: 20px;
+  color: $blue;
+  outline: none !important;
+  &:hover{
+    color: $deepBlue;
+    text-decoration: none;
+  }
+}

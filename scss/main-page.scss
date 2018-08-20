@@ -1,0 +1,58 @@
+.main-section {
+  padding-top: 150px;
+  @media(max-width: 991px) {
+    padding-top: 64px;
+  }
+  .hello-container {
+    margin-bottom: 216px;
+    @media(max-width: 991px) {
+      margin-bottom: 64px;
+    }
+    h1 {
+      margin-bottom: 24px;
+      @media(max-width: 991px) {
+        margin-bottom: 16px;
+      }
+    }
+    .display-p {
+      font-size: 22px;
+      line-height: normal;
+      @media(max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .how-works {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 48px;
+    }
+    button {
+      padding-left: 32px;
+      padding-right: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  .work-type-container{
+    margin-bottom: 64px;
+    @media(min-width: 992px){
+      margin-bottom: 160px;
+    }
+    @media(min-width: 1200px){
+      margin-bottom: 200px;
+    }
+    .work-type{
+      width: 100%;
+      h5{
+        margin-bottom: 2px;
+      }
+      p{
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+    }
+
+  }
+}
