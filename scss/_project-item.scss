@@ -1,27 +1,40 @@
-.project-item{
+.project-item {
   width: 258px;
   margin-right: 16px;
-
-  &:hover{
+  &.fluid {
+    width: 100%;
+  }
+  &:hover {
     cursor: pointer;
-    h5{
-      color:$deepBlue;
+    h5 {
+      color: $deepBlue;
     }
   }
-  @media(min-width: 992px){
+  @media(min-width: 992px) {
     width: 512px;
   }
-  .project-item--img{
+  .project-item--img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 3px;
   }
-  h5{
+  h5 {
     transition: all .2s;
     margin-bottom: 0;
   }
-  p{
+  p {
     margin-bottom: 56px;
+  }
+}
+
+.project-item--container {
+  @media(min-width: 992px){
+    &:nth-of-type(even) {
+      padding-right: 8px;
+    }
+    &:nth-of-type(odd) {
+      padding-left: 8px;
+    }
   }
 }

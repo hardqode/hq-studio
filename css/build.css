@@ -178,6 +178,8 @@ header {
 .project-item {
   width: 258px;
   margin-right: 16px; }
+  .project-item.fluid {
+    width: 100%; }
   .project-item:hover {
     cursor: pointer; }
     .project-item:hover h5 {
@@ -196,6 +198,12 @@ header {
   .project-item p {
     margin-bottom: 56px; }
 
+@media (min-width: 992px) {
+  .project-item--container:nth-of-type(even) {
+    padding-right: 8px; }
+  .project-item--container:nth-of-type(odd) {
+    padding-left: 8px; } }
+
 .animation-container {
   position: fixed;
   top: 0; }
@@ -213,6 +221,24 @@ header {
     position: absolute;
     top: 0;
     left: 0; }
+
+.all-projects-section {
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  @media (min-width: 992px) {
+    .all-projects-section {
+      padding-top: 88px;
+      padding-bottom: 120px; } }
+  .all-projects-section .display-1 {
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .all-projects-section .display-1 {
+        margin-bottom: 56px; } }
+  .all-projects-section .project-item p {
+    margin-bottom: 28px; }
+    @media (min-width: 992px) {
+      .all-projects-section .project-item p {
+        margin-bottom: 32px; } }
 
 .social-links--block a {
   margin-right: 13.5px;
@@ -292,7 +318,6 @@ header {
         margin-bottom: 120px; } }
 
 footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
   padding-top: 40px;
   padding-bottom: 20px;
   position: relative; }
@@ -300,11 +325,17 @@ footer {
     footer {
       text-align: center;
       padding-bottom: 40px; } }
+  footer.white-themed {
+    color: #1a1a1a;
+    border-top: 1px solid rgba(26, 26, 26, 0.04); }
+  footer.dark-themed {
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.04); }
   footer .footer--item {
     font-family: Clear Sans;
     line-height: normal;
     font-size: 20px;
-    color: #FFFFFF;
+    color: inherit;
     margin-bottom: 10px; }
     footer .footer--item:last-of-type {
       margin-bottom: 40px; }
@@ -318,7 +349,7 @@ footer {
     margin-bottom: 0;
     font-size: 14px;
     line-height: normal;
-    color: #FFFFFF;
+    color: inherit;
     opacity: 0.3; }
   @media (max-width: 991px) {
     footer .social-links--block {
