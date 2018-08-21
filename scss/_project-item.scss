@@ -1,0 +1,27 @@
+.project-item{
+  width: 258px;
+  margin-right: 16px;
+
+  &:hover{
+    cursor: pointer;
+    h5{
+      color:$deepBlue;
+    }
+  }
+  @media(min-width: 992px){
+    width: 512px;
+  }
+  .project-item--img{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  h5{
+    transition: all .2s;
+    margin-bottom: 0;
+  }
+  p{
+    margin-bottom: 56px;
+  }
+}

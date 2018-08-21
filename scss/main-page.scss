@@ -4,7 +4,7 @@
     padding-top: 64px;
   }
   .hello-container {
-    margin-bottom: 216px;
+    margin-bottom: 220px;
     @media(max-width: 991px) {
       margin-bottom: 64px;
     }
@@ -54,5 +54,18 @@
       }
     }
 
+  }
+  .projects-slider{
+    padding-right: 0;
+    margin-top: 32px;
+    @media(min-width:992px){
+      margin-top: 44px;
+    }
+  }
+  .all-projects-btn{
+    margin-bottom: 80px;
+    @media(min-width:992px){
+      margin-bottom: 120px;
+    }
   }
 }

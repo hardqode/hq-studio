@@ -1,11 +1,11 @@
 header {
   padding-top: 32px;
-  .row{
+  .row {
     align-items: center;
   }
   .logo {
     width: 195px;
-    @media(max-width:991px){
+    @media(max-width: 991px) {
       width: 170px;
     }
     path {
@@ -19,27 +19,52 @@ header {
       }
     }
   }
-  .lang{
-    color: white;
-    font-size: 14px;
-    line-height: normal;
-  }
-  .menu{
-    margin-left: 44px;
-    @media(max-width:991px){
-      margin-left: 32px;
-    }
-    svg{
-      path{
-        fill:white
+  &.white-themed {
+    .lang {
+      color: $black;
+      &:hover{
+        color: $deepBlue;
       }
     }
-    &:hover{
-      svg{
-        path{
-          fill:$deepBlue
+    .menu {
+      svg {
+        path {
+          fill: $black
         }
       }
     }
+  }
+  &.black-themed {
+    .lang {
+      color: white;
+      &:hover{
+        color: $deepBlue;
+      }
+    }
+    .menu {
+      svg {
+        path {
+          fill: white
+        }
+      }
+    }
+  }
+  .lang {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .menu {
+    margin-left: 44px;
+    @media(max-width: 991px) {
+      margin-left: 32px;
+    }
+    &:hover {
+      svg {
+        path {
+          fill: $deepBlue
+        }
+      }
+    }
+
   }
 }

@@ -6,11 +6,11 @@ $deepBlue:#2852CF;
 *{
   font-family: "Clear Sans";
 }
-.black-themed{
+body.black-themed{
   color: white;
   background-color: $blackBG;
 }
-.white-themed{
+body.white-themed{
   color: $black;
   background-color: white;
 }

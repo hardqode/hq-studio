@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
     <link rel="stylesheet" href="./fonts/clear-sans/stylesheet.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/build.css">
 </head>
 <body class="black-themed">
@@ -17,7 +19,7 @@
         <canvas id="webgl"></canvas>
     </div>
 </div>
-<header>
+<header class="black-themed">
     <div class="container">
         <div class="row">
             <div class="col-auto">
@@ -93,6 +95,48 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid projects-slider">
+        <div class="owl-carousel owl-theme">
+            <div class="project-item">
+                <img src="./assets/projects/timerman.png" alt="" class="project-item--img">
+                <h5 class="display-5">Timerman</h5>
+                <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/projects/akbars.png" alt="" class="project-item--img">
+                <h5 class="display-5">Ак Барс</h5>
+                <p class="display-p descriptor">информационная система хоккейных школ академии «Ак Барс» </p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/projects/akbars.png" alt="" class="project-item--img">
+                <h5 class="display-5">Sensey</h5>
+                <p class="display-p descriptor">сервис оформления ипотеки онлайн</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/projects/timerman.png" alt="" class="project-item--img">
+                <h5 class="display-5">Timerman</h5>
+                <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/projects/timerman.png" alt="" class="project-item--img">
+                <h5 class="display-5">Timerman</h5>
+                <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/projects/timerman.png" alt="" class="project-item--img">
+                <h5 class="display-5">Timerman</h5>
+                <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container all-projects-btn">
+        <div class="row">
+            <div class="col-12">
+                <a href="projects.html" class="button btn-outline-white">Все работы</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <footer>
@@ -100,8 +144,10 @@
         <div class="row">
             <div class="col-lg-auto">
                 <p class="footer--item">Казань, ул. Петербурская, 52</p>
-                <p class="footer--item"><a href="mailto:the@hardqode.com" class="footer--item link">the@hardqode.com</a></p>
-                <p class="footer--item"><a href="tel:+7 (843) 245-245-9" class="footer--item link">+7 (843) 245-245-9</a></p>
+                <p class="footer--item"><a href="mailto:the@hardqode.com" class="footer--item link">the@hardqode.com</a>
+                </p>
+                <p class="footer--item"><a href="tel:+7 (843) 245-245-9" class="footer--item link">+7 (843)
+                    245-245-9</a></p>
             </div>
             <div class="col-12 col-lg-auto ml-auto">
                 <button class="button btn-blue">Заполнить бриф</button>
@@ -114,16 +160,16 @@
             <div class="col-auto mx-auto ml-lg-auto mr-lg-0 social-links--block black-themed">
                 <a href="#">
                     <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="20.8973" height="12.3913" fill="black" fill-opacity="0"/>
+                        <g>
+                            <rect width="20.8973" height="12.3913" fill="none" fill-opacity="0"/>
                             <path d="M11.4599 12.3858C11.9902 12.3858 12.207 12.0265 12.2009 11.576C12.1739 9.87928 12.8226 8.96588 13.9936 10.1563C15.2892 11.4733 15.5574 12.3858 17.1307 12.3858H19.9169C20.6204 12.3858 20.8973 12.1557 20.8973 11.7946C20.8973 11.0308 19.66 9.68279 18.6117 8.69327C17.1438 7.30812 17.075 7.27537 18.3392 5.60788C19.9073 3.53767 21.9587 0.885082 20.1441 0.885082H16.678C16.0058 0.885082 15.957 1.27009 15.7176 1.84363C14.8513 3.92091 13.2048 6.61156 12.5796 6.2C11.9258 5.77073 12.2253 4.07049 12.2749 1.54358C12.288 0.876231 12.2845 0.418644 11.2815 0.181442C10.7338 0.0531048 10.2009 0 9.70639 0C7.72732 0 6.36209 0.843483 7.13787 0.990406C8.50571 1.24974 8.37424 4.25813 8.05557 5.55743C7.50007 7.8197 5.41217 3.76602 4.54236 1.74715C4.33252 1.26213 4.26809 0.885082 3.5193 0.885082H0.685228C0.256852 0.885082 0 1.02669 0 1.34178C0 1.8746 2.57722 7.28953 5.03778 9.98903C7.43738 12.6221 9.80913 12.3858 11.4599 12.3858Z"/>
                         </g>
                     </svg>
                 </a>
                 <a href="#">
                     <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="21.7395" height="14.0435" fill="black" fill-opacity="0"
+                        <g>
+                            <rect width="21.7395" height="14.0435" fill="none" fill-opacity="0"
                                   transform="translate(0.949219)"/>
                             <path d="M20.8769 1.87246H14.5363V0H20.8769V1.87246ZM22.4403 11.2348C22.0399 12.4491 20.6024 14.0435 17.8198 14.0435C15.0354 14.0435 12.7799 12.4247 12.7799 8.73036C12.7799 5.0697 14.8859 3.18787 17.731 3.18787C20.5227 3.18787 22.2274 4.85624 22.5997 7.33163C22.6704 7.80537 22.6984 8.44388 22.6858 9.33517H15.4149C15.5326 12.3414 18.5698 12.436 19.5707 11.2348H22.4403ZM15.4783 7.48985H19.9756C19.8805 6.0415 18.9466 5.41236 17.7319 5.41236C16.404 5.41236 15.6694 6.13138 15.4783 7.48985ZM6.80614 14.0322H0.949219V0.0196608H7.24726C12.2074 0.0954956 12.3016 5.11651 9.71105 6.48528C12.846 7.66493 12.9511 14.0322 6.80614 14.0322ZM3.66663 5.61739H6.91302C9.18477 5.61739 9.54528 2.8087 6.63041 2.8087H3.66663V5.61739ZM6.7382 8.42609H3.66663V11.2498H6.69291C9.46014 11.2498 9.29075 8.42609 6.7382 8.42609Z"/>
                         </g>
@@ -131,8 +177,8 @@
                 </a>
                 <a href="#">
                     <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="11" height="18.1739" fill="black" fill-opacity="0"
+                        <g>
+                            <rect width="11" height="18.1739" fill="none" fill-opacity="0"
                                   transform="translate(0.896973)"/>
                             <path d="M3.64697 6.05797H0.896973V9.08696H3.64697V18.1739H8.23031V9.08696H11.5688L11.897 6.05797H8.23031V4.79564C8.23031 4.07247 8.40631 3.78623 9.25239 3.78623H11.897V0H8.40631C5.10997 0 3.64697 1.19872 3.64697 3.49469V6.05797Z"/>
                         </g>
@@ -140,8 +186,8 @@
                 </a>
                 <a href="#">
                     <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="18.3707" height="19" fill="black" fill-opacity="0"
+                        <g>
+                            <rect width="18.3707" height="19" fill="none" fill-opacity="0"
                                   transform="translate(0.859375)"/>
                             <path d="M10.0447 1.71238C12.4972 1.71238 12.7881 1.72188 13.7571 1.76779C16.2464 1.88496 17.4091 3.1065 17.5223 5.662C17.5667 6.66346 17.5752 6.96429 17.5752 9.50079C17.5752 12.0381 17.566 12.3381 17.5223 13.3396C17.4083 15.8927 16.2486 17.1166 13.7571 17.2338C12.7881 17.2797 12.4987 17.2892 10.0447 17.2892C7.59223 17.2892 7.30136 17.2797 6.33307 17.2338C3.83772 17.1158 2.68113 15.8888 2.56785 13.3388C2.52345 12.3373 2.51427 12.0373 2.51427 9.5C2.51427 6.9635 2.52422 6.66346 2.56785 5.66121C2.6819 3.1065 3.84155 1.88417 6.33307 1.767C7.30213 1.72188 7.59223 1.71238 10.0447 1.71238ZM10.0447 0C7.55013 0 7.23783 0.0110833 6.25806 0.057C2.92225 0.215333 1.06834 2.12958 0.915252 5.58283C0.870091 6.59696 0.859375 6.91996 0.859375 9.5C0.859375 12.08 0.870091 12.4038 0.914487 13.4172C1.06758 16.8673 2.91842 18.7847 6.25729 18.943C7.23783 18.9889 7.55013 19 10.0447 19C12.5393 19 12.8524 18.9889 13.8321 18.943C17.1649 18.7847 19.0234 16.8704 19.1742 13.4172C19.2193 12.4038 19.2301 12.08 19.2301 9.5C19.2301 6.91996 19.2193 6.59696 19.1749 5.58362C19.0249 2.13671 17.1718 0.216125 13.8329 0.0577917C12.8524 0.0110833 12.5393 0 10.0447 0V0ZM10.0447 4.62175C7.43991 4.62175 5.32804 6.80596 5.32804 9.5C5.32804 12.194 7.43991 14.379 10.0447 14.379C12.6495 14.379 14.7614 12.1948 14.7614 9.5C14.7614 6.80596 12.6495 4.62175 10.0447 4.62175ZM10.0447 12.6667C8.35385 12.6667 6.98293 11.2496 6.98293 9.5C6.98293 7.75121 8.35385 6.33333 10.0447 6.33333C11.7356 6.33333 13.1065 7.75121 13.1065 9.5C13.1065 11.2496 11.7356 12.6667 10.0447 12.6667ZM14.9482 3.28938C14.3389 3.28938 13.8451 3.8 13.8451 4.42937C13.8451 5.05875 14.3389 5.56938 14.9482 5.56938C15.5567 5.56938 16.0496 5.05875 16.0496 4.42937C16.0496 3.8 15.5567 3.28938 14.9482 3.28938Z"/>
                         </g>
@@ -149,8 +195,8 @@
                 </a>
                 <a href="#">
                     <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="19.2133" height="16.5217" fill="black" fill-opacity="0"
+                        <g>
+                            <rect width="19.2133" height="16.5217" fill="none" fill-opacity="0"
                                   transform="translate(0.810547)"/>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M15.528 16.3393C15.7857 16.5276 16.1179 16.5747 16.4141 16.4591C16.7103 16.3426 16.9281 16.0816 16.9937 15.7652C17.6894 12.3914 19.3769 3.85217 20.0102 0.783253C20.0582 0.551949 19.9781 0.311557 19.802 0.157079C19.6259 0.00260076 19.3817 -0.042008 19.164 0.0414268C15.8073 1.32351 5.47 5.3259 1.24476 6.93925C0.976577 7.04169 0.802059 7.30769 0.810865 7.5993C0.820472 7.89173 1.011 8.14534 1.28558 8.23043C3.18046 8.8153 5.66773 9.62899 5.66773 9.62899C5.66773 9.62899 6.83011 13.2514 7.43612 15.0936C7.51217 15.3249 7.68748 15.5066 7.91884 15.5694C8.14939 15.6313 8.39596 15.5661 8.56808 15.3984C9.54153 14.45 11.0465 12.9837 11.0465 12.9837C11.0465 12.9837 13.9061 15.1473 15.528 16.3393ZM6.71403 9.17134L8.05813 13.7462L8.35673 10.8491C8.35673 10.8491 13.5498 6.01569 16.5102 3.26069C16.5967 3.17973 16.6087 3.04425 16.5366 2.94925C16.4654 2.85425 16.3341 2.83195 16.2356 2.89638C12.8045 5.15738 6.71403 9.17134 6.71403 9.17134Z"/>
@@ -159,8 +205,8 @@
                 </a>
                 <a href="#">
                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g >
-                            <rect width="18.0958" height="14.8696" fill="black" fill-opacity="0"
+                        <g>
+                            <rect width="18.0958" height="14.8696" fill="none" fill-opacity="0"
                                   transform="translate(0.761719)"/>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M2.90758 3.03354C2.9302 2.80331 2.845 2.57621 2.67912 2.42168L0.990178 0.314514V0H6.23645L10.2914 9.20519L13.8563 0H18.8575V0.314514L17.4129 1.74817C17.2884 1.8465 17.2266 2.00805 17.2523 2.16804V12.7023C17.2266 12.8615 17.2884 13.0231 17.4129 13.1214L18.8236 14.5551V14.8696H11.727V14.5551L13.189 13.0863C13.3323 12.938 13.3323 12.8943 13.3323 12.6672V4.15268L9.269 14.8352H8.72009L3.9888 4.15268V11.3124C3.94959 11.6128 4.0461 11.9164 4.25043 12.1334L6.15125 14.5199V14.8352H0.761719V14.5199L2.66253 12.1334C2.86611 11.9156 2.95659 11.6105 2.90758 11.3124V3.03354Z"/>
@@ -223,7 +269,22 @@
 
 
 
+
+
+
+
+
 </script>
 <script src="./js/demo2.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        margin:8,
+        dots:false,
+        autoWidth:true,
+        loop:true
+    })
+
+</script>
 </body>
 </html>
