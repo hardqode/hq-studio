@@ -55,6 +55,9 @@
   color: inherit;
   &.descriptor{
     opacity: .5;
+    @media(max-width:991px){
+      font-size: 14px;
+    }
   }
 }
 .link{
