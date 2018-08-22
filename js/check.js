@@ -1,1 +1,1 @@
-transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateZ(0px) translateX() translateY();
+// transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateZ(0px) translateX() translateY();

@@ -1,33 +1,55 @@
 .main-section {
-  padding-top: 150px;
+  padding-top: 152px;
   @media(max-width: 991px) {
     padding-top: 64px;
   }
   .hello-container {
-    margin-bottom: 220px;
+    margin-bottom: 216px;
     @media(max-width: 991px) {
       margin-bottom: 64px;
     }
+    @media(min-width: 992px) and ( max-width:1199px){
+      margin-bottom: 160px;
+    }
     h1 {
-      margin-bottom: 24px;
+      margin-bottom: 19px;
       @media(max-width: 991px) {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
       }
     }
     .display-p {
       font-size: 22px;
       line-height: normal;
+      margin-bottom: 0;
       @media(max-width: 991px) {
         font-size: 16px;
+        line-height: 20px;
       }
     }
   }
   .how-works {
+    @media(min-width: 992px){
+      padding-right: 0;
+    }
     h2 {
       margin-bottom: 20px;
+      @media (max-width: 991px) {
+        line-height: 42px;
+      }
     }
     p {
-      margin-bottom: 48px;
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: normal;
+      @media(min-width:992px){
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 19px;
+      }
+      @media(min-width: 1199px){
+        line-height: normal;
+      }
+
     }
     button {
       padding-left: 32px;
@@ -37,6 +59,12 @@
   }
   .work-type-container{
     margin-bottom: 64px;
+    @media(max-width: 991px){
+      + .col-12 > .display-2{
+        line-height: 42px;
+      }
+    }
+
     @media(min-width: 992px){
       margin-bottom: 160px;
     }
@@ -45,12 +73,32 @@
     }
     .work-type{
       width: 100%;
+      margin-bottom: 20px;
+      @media(max-width: 991px){
+        margin-bottom: 21px;
+      }
+
       h5{
         margin-bottom: 2px;
       }
       p{
-        margin-bottom: 20px;
+        margin-bottom: 0;
         font-weight: 300;
+        font-size: 14px;
+        @media(max-width: 991px){
+          line-height: 17px;
+        }
+        @media(min-width: 992px){
+          font-size: 16px;
+          max-height: 59px;
+        }
+        @media(min-width: 1200px){
+          max-height: 39px;
+
+        }
+      }
+      &:last-of-type{
+        margin-bottom: 0;
       }
     }
 
@@ -58,14 +106,23 @@
   .projects-slider{
     padding-right: 0;
     margin-top: 32px;
+    margin-bottom: 40px;
     @media(min-width:992px){
       margin-top: 44px;
+      margin-bottom: 56px;
+    }
+
+    .project-item{
+      margin-right: 0;
     }
   }
   .all-projects-btn{
     margin-bottom: 80px;
+    a{
+      display: inline-block;
+    }
     @media(min-width:992px){
-      margin-bottom: 120px;
+      margin-bottom: 121px;
     }
   }
 }

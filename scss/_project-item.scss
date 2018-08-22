@@ -1,5 +1,5 @@
 .project-item {
-  width: 258px;
+  width: 261px;
   margin-right: 16px;
   &.fluid {
     width: 100%;
@@ -24,7 +24,8 @@
     margin-bottom: 0;
   }
   p {
-    margin-bottom: 56px;
+    margin-bottom: 0;
+    line-height: 20px;
   }
 }
 

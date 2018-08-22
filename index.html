@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="./css/build.css">
 </head>
 <body class="black-themed">
+
 <div class="animation-container">
     <div class="container-fluid">
         <canvas id="webgl"></canvas>
     </div>
 </div>
+
 <header class="black-themed">
     <div class="container">
         <div class="row">
@@ -59,6 +61,7 @@
         </div>
     </div>
 </header>
+
 <section class="menu-modal-section">
     <div class="container">
         <div class="row">
@@ -92,13 +95,14 @@
         </div>
     </div>
 </section>
+
 <section class="main-section">
     <div class="container">
         <div class="row hello-container">
             <div class="col-9 col-lg-12 col-xl-8 ">
                 <h1 class="display-1">Доводим до конца сложные <a href="projects.html" class="link">проекты</a></h1>
             </div>
-            <div class="col-12 ">
+            <div class="col-12 col-lg-8">
                 <p class="display-p">Разрабатываем корпоративные и промо-сайты, <br class="d-none d-lg-block">
                     интернет-магазины, сервисы и мобильные приложения</p>
             </div>
@@ -107,9 +111,12 @@
             <div class="col-12 how-works">
                 <h2 class="display-2">Как работаем</h2>
             </div>
-            <div class="col-12 col-lg-6 col-xl-5 how-works">
-                <p class="display-p">Главное в нашем понимании — успешный продукт.
+            <div class="col-12 col-lg-7 col-xl-5 how-works">
+                <p class="display-p d-none d-lg-block">Главное в нашем понимании — успешный продукт.
                     Достичь этого помогает полное вовлечение в проект, поэтому мы проводим полный цикл работ и выдаём
+                    работоспособную систему.</p>
+                <p class="display-p d-lg-none mb-2">Главное в нашем понимании — успешный продукт.</p>
+                <p class="display-p d-lg-none">Достичь этого помогает полное вовлечение в проект, поэтому мы проводим полный цикл работ и выдаём
                     работоспособную систему.</p>
                 <button class="button btn-blue">Оставить заявку</button>
             </div>
@@ -128,7 +135,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <h2 class="display-2">Наши работы</h2>
+                <h2 class="display-2 mb-0">Наши работы</h2>
             </div>
         </div>
     </div>
@@ -254,6 +261,7 @@
         </div>
     </div>
 </footer>
+
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/regl.min.js"></script>
@@ -315,11 +323,11 @@
 
 
 </script>
-<script src="./js/demo2.js"></script>
+<!--<script src="./js/demo2.js"></script>-->
 <script src="./js/owl.carousel.min.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
-        margin: 8,
+        margin: 16,
         dots: false,
         autoWidth: true,
         loop: true
