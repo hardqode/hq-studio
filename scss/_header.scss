@@ -1,4 +1,5 @@
 header {
+  transition: all .1s;
   padding-top: 32px;
   .row {
     align-items: center;
@@ -57,6 +58,11 @@ header {
     margin-left: 44px;
     @media(max-width: 991px) {
       margin-left: 32px;
+    }
+    svg{
+      path{
+        transition: d 1s;
+      }
     }
     &:hover {
       svg {

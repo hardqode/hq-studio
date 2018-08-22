@@ -6,6 +6,13 @@ $deepBlue:#2852CF;
 *{
   font-family: "Clear Sans";
 }
+body.modal-open{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+
+}
 body.black-themed{
   color: white;
   background-color: $blackBG;
@@ -13,4 +20,10 @@ body.black-themed{
 body.white-themed{
   color: $black;
   background-color: white;
+}
+.container{
+  @media (max-width: 991px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

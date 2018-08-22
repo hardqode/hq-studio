@@ -43,7 +43,7 @@
                 <a href="#" class="link lang">EN</a>
             </div>
             <div class="col-auto pl-0">
-                <a href="#" class="menu" role="button">
+                <a href="#" class="menu" role="button" id="menu-toggle">
                     <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="28" height="18" fill="black" fill-opacity="0"/>
                         <rect width="28" height="2" fill="black" fill-opacity="0"/>
@@ -59,14 +59,51 @@
         </div>
     </div>
 </header>
-<section class="main-section">
+<section class="menu-modal-section">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12 col-xl-8 hello-container">
+            <div class="col-12 col-lg-7 col-xl-6">
+                <a href="projects.html" class="menu-item">Наши работы</a>
+                <a href="#" class="menu-item d-none d-lg-block">Презентация</a>
+                <a href="#" class="menu-item d-lg-none">Посмотреть презентацию</a>
+                <a href="#"
+                   class="menu-item"
+                   id="menu-read-more-btn"
+                   role="button"
+                   data-toggle="collapse"
+                   data-target="#submenu"
+                   aria-expanded="false">Почитать
+                    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L14 13L25 3" stroke="white" stroke-width="6"/>
+                    </svg>
+                </a>
+                <div class="sub-menu collapse" id="submenu">
+                    <a href="#" class="submenu-item">Телеграм-канал по IT-сфере</a>
+                    <a href="#" class="submenu-item">Блог для разработчиков (en)</a>
+                    <a href="#" class="submenu-item">Блог Альберта Баширова</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-3 ml-auto contacts-block">
+                <p class="contact-item">Казань, ул. Петербурская, 52</p>
+                <a href="mailto:the@hardqode.com" class="contact-item">the@hardqode.com</a>
+                <a href="tel:+7 (843) 245-245-9" class="contact-item">+7 (843) 245-245-9</a>
+                <button class="button btn-blue">Заполнить бриф</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-section">
+    <div class="container">
+        <div class="row hello-container">
+            <div class="col-9 col-lg-12 col-xl-8 ">
                 <h1 class="display-1">Доводим до конца сложные <a href="projects.html" class="link">проекты</a></h1>
+            </div>
+            <div class="col-12 ">
                 <p class="display-p">Разрабатываем корпоративные и промо-сайты, <br class="d-none d-lg-block">
                     интернет-магазины, сервисы и мобильные приложения</p>
             </div>
+        </div>
+        <div class="row">
             <div class="col-12 how-works">
                 <h2 class="display-2">Как работаем</h2>
             </div>
@@ -218,7 +255,7 @@
     </div>
 </footer>
 <script src="./js/jquery-3.2.1.min.js"></script>
-<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/regl.min.js"></script>
 <script type="x-shader/x-fragment" id="fragmentShader">
 	#define TWO_PI 6.2831853072
@@ -274,17 +311,20 @@
 
 
 
+
+
+
 </script>
 <script src="./js/demo2.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
-        margin:8,
-        dots:false,
-        autoWidth:true,
-        loop:true
+        margin: 8,
+        dots: false,
+        autoWidth: true,
+        loop: true
     })
-
 </script>
+<script src="./js/menu-scripts.js"></script>
 </body>
 </html>

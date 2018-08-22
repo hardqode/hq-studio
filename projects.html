@@ -38,7 +38,7 @@
                 <a href="#" class="link lang">EN</a>
             </div>
             <div class="col-auto pl-0">
-                <a href="#" class="menu" role="button">
+                <a href="#" class="menu" role="button" id="menu-toggle">
                     <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="28" height="18" fill="black" fill-opacity="0"/>
                         <rect width="28" height="2" fill="black" fill-opacity="0"/>
@@ -54,6 +54,40 @@
         </div>
     </div>
 </header>
+<section class="menu-modal-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-6">
+                <a href="projects.html" class="menu-item">Наши работы</a>
+                <a href="#" class="menu-item d-none d-lg-block">Презентация</a>
+                <a href="#" class="menu-item d-lg-none">Посмотреть презентацию</a>
+                <a href="#"
+                   class="menu-item"
+                   id="menu-read-more-btn"
+                   role="button"
+                   data-toggle="collapse"
+                   data-target="#submenu"
+                   aria-expanded="false">Почитать
+                    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L14 13L25 3" stroke="#1a1a1a" stroke-width="6"/>
+                    </svg>
+                </a>
+                <div class="sub-menu collapse" id="submenu">
+                    <a href="#" class="submenu-item">Телеграм-канал по IT-сфере</a>
+                    <a href="#" class="submenu-item">Блог для разработчиков (en)</a>
+                    <a href="#" class="submenu-item">Блог Альберта Баширова</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-3 ml-auto contacts-block">
+                <p class="contact-item">Казань, ул. Петербурская, 52</p>
+                <a href="mailto:the@hardqode.com" class="contact-item">the@hardqode.com</a>
+                <a href="tel:+7 (843) 245-245-9" class="contact-item">+7 (843) 245-245-9</a>
+                <button class="button btn-blue">Заполнить бриф</button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="all-projects-section">
     <div class="container">
         <div class="row">
@@ -63,7 +97,7 @@
                 <div class="col-12 col-lg-6 project-item--container">
 
                     <div class="project-item fluid">
-                        <img src="./assets/projects/timerman.png" alt="" class="project-item--img">
+                        <img src="./assets/projects/timerman.png" alt="" class="project-item--img hover-parallax">
                         <h5 class="display-5">Timerman</h5>
                         <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
                     </div>
@@ -191,6 +225,25 @@
     </div>
 </footer>
 <script src="./js/jquery-3.2.1.min.js"></script>
-<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script>
+//hovering tiles
+    $('.hover-parallax').on('mousemove',function (e) {
+        var parentOffset = $(this).parent().offset();
+        $(this).css('transform','scale(1)');
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        console.log(parentOffset)
+        console.log(relX)
+        console.log(relY)
+
+    }
+    // ,function () {
+    //     $(this).css('transform','scale(1)');
+    // }
+    )
+</script>
+<script src="./js/menu-scripts.js"></script>
 </body>
 </html>

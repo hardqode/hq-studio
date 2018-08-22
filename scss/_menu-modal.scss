@@ -1,0 +1,143 @@
+body.white-themed{
+  .menu-modal-section{
+    background-color: white;
+    color: $black;
+  }
+
+}
+body.black-themed{
+  &.modal-open{
+    header{
+      background-color: $blackBG ;
+      position: relative;
+      .lang{
+        opacity: 0;
+      }
+    }
+  }
+  .menu-modal-section{
+    background-color: $blackBG;
+    color: white;
+  }
+}
+
+.menu-modal-section{
+  display: none;
+  height: calc(100vh - 64px);
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  @media(max-width:991px){
+    padding-top: 55px;
+  }
+  @media(min-width:992px){
+    padding-top: 108px;
+  }
+  @media(min-width: 1300px){
+    padding-top: 272px;
+  }
+  .menu-item{
+    font-family: Gilroy;
+    line-height: 55px;
+    font-size: 52px;
+    margin-bottom: 32px;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    color: inherit;
+    @media(max-width:991px){
+      line-height: normal;
+      font-size: 22px;
+      margin-bottom: 20px;
+      &:last-of-type{
+        margin-bottom: 16px;
+      }
+      svg{
+        width: 15px;
+      }
+    }
+    &:hover{
+      color: $deepBlue;
+      text-decoration: none;
+      svg{
+        path{
+          stroke:$deepBlue;
+
+        }
+      }
+    }
+  }
+  .sub-menu{
+    @media(max-width:991px){
+      margin-bottom: 52px;
+    }
+  }
+  .submenu-item{
+    font-family: Gilroy;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 28px;
+    color: inherit;
+    margin-bottom: 20px;
+    padding-left: 36px;
+    width: 100%;
+    display: block;
+    &:hover{
+      text-decoration: none;
+      color: $deepBlue;
+    }
+    @media(max-width:991px){
+      line-height: normal;
+      font-size: 18px;
+      margin-bottom: 14px;
+      padding-left: 20px;
+    }
+  }
+  .contacts-block{
+    @media(max-width: 991px){
+      position: absolute;
+      bottom: 60px;
+    }
+    @media(min-width: 992px){
+      padding-left: 0;
+    }
+    p{
+      margin-bottom: 12px;
+    }
+    a{
+      &:hover{
+        color: $deepBlue;
+        text-decoration: none;
+      }
+      &:last-of-type{
+        margin-bottom: 32px;
+      }
+    }
+    .contact-item{
+      display: block;
+      color: inherit;
+      font-family: Clear Sans;
+      line-height: normal;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes dissapear {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
