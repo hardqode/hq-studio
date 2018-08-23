@@ -97,8 +97,9 @@ body.white-themed {
   border-radius: 3px;
   cursor: pointer; }
   .button.btn-s {
-    padding: 13px 20px;
-    font-size: 16px; }
+    padding: 12px 19px;
+    font-size: 16px;
+    line-height: 22px; }
   .button.btn-blue {
     background-color: #3764EB;
     color: white; }
@@ -123,27 +124,61 @@ body.white-themed {
     background-color: #898989;
     color: rgba(26, 26, 26, 0.2); }
 
+.btn-icon {
+  outline: none !important;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  opacity: .3; }
+  .btn-icon:hover {
+    opacity: .6; }
+  .btn-icon:active {
+    opacity: .9; }
+
 .form-container {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 22px;
+  position: relative; }
   .form-container label {
     font-family: Clear Sans;
-    line-height: 21px;
+    line-height: 24px;
     font-size: 16px;
     color: #1a1a1a;
-    margin-bottom: 4px; }
-  .form-container input {
-    line-height: 21px;
+    margin-bottom: 4px;
+    width: 100%; }
+  .form-container input, .form-container textarea {
+    outline: none !important;
+    line-height: 24px;
     font-size: 16px;
     color: #1a1a1a;
-    padding-left: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px; }
-    .form-container input:hover {
+    .form-container input:hover, .form-container textarea:hover {
       border: 1px solid rgba(0, 0, 0, 0.18); }
-    .form-container input:focus {
+    .form-container input:focus, .form-container textarea:focus {
       border: 1px solid #3764EB; }
+    .form-container input.error, .form-container textarea.error {
+      border-color: #E20000; }
+      .form-container input.error + .error-msg, .form-container textarea.error + .error-msg {
+        display: block; }
+  .form-container textarea {
+    padding-right: 29px;
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 21px; }
+  .form-container .error-msg {
+    display: none;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    line-height: 18px;
+    color: #E20000;
+    font-size: 13px; }
 
 @media (min-width: 992px) {
   .container {
@@ -210,7 +245,7 @@ body.black-themed .menu-modal-section {
   height: calc(100vh - 64px);
   width: 100%;
   position: fixed;
-  z-index: 20; }
+  z-index: 2020; }
   @media (max-width: 991px) {
     .menu-modal-section {
       padding-top: 55px; } }
@@ -554,6 +589,117 @@ body.black-themed .menu-modal-section {
     @media (min-width: 992px) {
       .main-section .all-projects-btn {
         margin-bottom: 121px; } }
+
+.brief-section {
+  padding-top: 64px;
+  padding-bottom: 80px; }
+  @media (min-width: 991px) {
+    .brief-section {
+      padding-top: 88px;
+      padding-bottom: 120px; } }
+  .brief-section .display-1 {
+    margin-bottom: 37px; }
+    @media (min-width: 992px) {
+      .brief-section .display-1 {
+        line-height: 80px;
+        margin-bottom: 56px; } }
+  .brief-section .brief-info-container {
+    margin-bottom: 26px; }
+    @media (min-width: 992px) {
+      .brief-section .brief-info-container .stick-lg {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020; } }
+    .brief-section .brief-info-container .display-p {
+      line-height: 22px;
+      margin-bottom: 14px; }
+      @media (min-width: 992px) {
+        .brief-section .brief-info-container .display-p {
+          max-width: 300px; } }
+      .brief-section .brief-info-container .display-p .link {
+        font-size: 16px; }
+  @media (min-width: 992px) {
+    .brief-section .brief-content {
+      padding-left: 10px; } }
+  .brief-section .brief-content .display-5 {
+    margin-bottom: 18px; }
+  @media (min-width: 991px) {
+    .brief-section .brief-content .input-container {
+      max-width: 422px; } }
+  .brief-section .brief-content .input-container textarea {
+    margin-bottom: 5px; }
+  .brief-section .brief-content .input-container.contacts {
+    margin-bottom: 50px; }
+    @media (min-width: 992px) {
+      .brief-section .brief-content .input-container.contacts {
+        margin-bottom: 74px; } }
+  .brief-section .send-container {
+    display: flex;
+    flex-wrap: wrap; }
+    .brief-section .send-container button {
+      margin-right: 24px; }
+      @media (max-width: 991px) {
+        .brief-section .send-container button {
+          margin-bottom: 16px; } }
+    .brief-section .send-container .submit-info p {
+      font-size: 13px;
+      margin-bottom: 0;
+      line-height: normal; }
+    .brief-section .send-container .submit-info .link {
+      font-size: 13px; }
+    @media (min-width: 992px) {
+      .brief-section .send-container .submit-info {
+        max-width: 320px; } }
+
+.checkbox-custom-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px; }
+  .checkbox-custom-block input:checked + label {
+    border: 1px solid #3764EB;
+    color: white;
+    background-color: #3764EB;
+    font-weight: 300; }
+  .checkbox-custom-block label {
+    font-family: Clear Sans;
+    line-height: 22px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 300;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    padding: 4px 11px;
+    border: 1px dotted #3764EB;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color,color .1s; }
+    .checkbox-custom-block label:hover {
+      border: 1px solid #3764EB; }
+
+.input-file-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 48px; }
+  @media (min-width: 992px) {
+    .input-file-container {
+      margin-bottom: 56px; } }
+  .input-file-container input {
+    display: none; }
+  .input-file-container button.btn-s {
+    margin-right: 32px;
+    font-size: 17px; }
+    @media (max-width: 991px) {
+      .input-file-container button.btn-s {
+        margin-bottom: 18px; } }
+  .input-file-container .show-input-name {
+    display: none; }
+  .input-file-container .file-name {
+    line-height: 22px; }
+  .input-file-container .btn-icon {
+    margin-left: 8px; }
 
 footer {
   padding-top: 40px;

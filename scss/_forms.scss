@@ -1,19 +1,24 @@
 .form-container {
   width: 100%;
+  margin-bottom: 22px;
+  position: relative;
   label {
     font-family: Clear Sans;
-    line-height: 21px;
+    line-height: 24px;
     font-size: 16px;
     color: $black;
     margin-bottom: 4px;
+    width: 100%;
   }
-  input {
-    line-height: 21px;
+  input, textarea {
+    outline: none !important;
+    line-height: 24px;
     font-size: 16px;
-    color:$black;
-    padding-left: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    color: $black;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     &:hover {
@@ -22,5 +27,27 @@
     &:focus {
       border: 1px solid #3764EB;
     }
+    &.error {
+      border-color:#E20000 ;
+      + .error-msg {
+        display: block;
+      }
+    }
+  }
+  textarea{
+    padding-right: 29px;
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+
+  }
+  .error-msg {
+    display: none;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    line-height: 18px;
+    color: #E20000;
+    font-size: 13px;
   }
 }

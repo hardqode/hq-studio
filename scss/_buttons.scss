@@ -3,8 +3,9 @@
   outline: none !important;
   transition: all .3s;
   &.btn-s{
-    padding: 13px 20px;
+    padding: 12px 19px;
     font-size: 16px;
+    line-height: 22px ;
   }
   font-size: 18px;
   line-height: normal;
@@ -40,5 +41,19 @@
     border: 0;
     background-color: #898989;
     color: rgba(26,26,26,.2);
+  }
+}
+.btn-icon{
+  outline: none !important;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  opacity: .3;
+  &:hover{
+    opacity: .6;
+  }
+  &:active{
+    opacity: .9;
   }
 }
