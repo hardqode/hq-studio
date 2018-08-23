@@ -92,76 +92,19 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-1">Заполнить бриф</h1>
+                <h1 class="display-1">Оставить заявку</h1>
             </div>
             <div class="col-12 col-lg-4 brief-info-container">
                 <div class="stick-lg">
 
-                    <p class="display-p">Вы можете <a href="request.html" class="link">оставить контакты</a>, мы свяжемся с вами и
-                        сами всё заполним</p>
+                    <p class="display-p">Вы можете <a href="brief.html" class="link">заполнить брифы</a></p>
                     <p class="display-p">Или позвоните: <a href="tel:+7 (843) 245-245-9" class="link">+7 (843)
                         245-245-9</a></p>
                 </div>
             </div>
             <div class=" col-12 col-lg-8 brief-content">
-                <h5 class="display-5">Что надо сделать?</h5>
-                <div class="checkbox-custom-block">
-                    <input type="checkbox" id="brief-site" hidden>
-                    <label for="brief-site">Сайт</label>
-                    <input type="checkbox" id="brief-service" hidden>
-                    <label for="brief-service">Сервис</label>
-                    <input type="checkbox" id="brief-app" hidden>
-                    <label for="brief-app">Мобильное приложение</label>
-                </div>
-                <h5 class="display-5">Какой бюджет?</h5>
-                <div class="checkbox-custom-block">
-                    <input type="radio" id="brief-budget-1" hidden name="brief-budget">
-                    <label for="brief-budget-1">Менее 100 тыс.</label>
-                    <input type="radio" id="brief-budget-2" hidden name="brief-budget">
-                    <label for="brief-budget-2">100-500 тыс.</label>
-                    <input type="radio" id="brief-budget-3" hidden name="brief-budget">
-                    <label for="brief-budget-3">500 тыс. – 1 млн.</label>
-                    <input type="radio" id="brief-budget-4" hidden name="brief-budget">
-                    <label for="brief-budget-4">1–2 млн.</label>
-                    <input type="radio" id="brief-budget-5" hidden name="brief-budget">
-                    <label for="brief-budget-5">более 2 млн.</label>
-                </div>
-                <h5 class="display-5">Какие сроки?</h5>
-
-                <div class="checkbox-custom-block">
-                    <input type="radio" id="brief-deadline-1" hidden name="brief-deadline">
-                    <label for="brief-deadline-1">меньше месяца</label>
-                    <input type="radio" id="brief-deadline-2" hidden name="brief-deadline">
-                    <label for="brief-deadline-2">от месяца до полугода</label>
-                    <input type="radio" id="brief-deadline-3" hidden name="brief-deadline">
-                    <label for="brief-deadline-3">от полугода до года</label>
-                    <input type="radio" id="brief-deadline-4" hidden name="brief-deadline">
-                    <label for="brief-deadline-4">не больше года</label>
-                </div>
-                <h5 class="display-5">Дополнительная информация</h5>
-                <div class="input-container">
-                    <div class="form-container">
-                        <label for="short-description">Краткое описание</label>
-                        <textarea rows="7" id="short-description"></textarea>
-                    </div>
-                </div>
-                <div class="input-file-container">
-                    <input type="file" id="input-info-file">
-                    <button class="button btn-s btn-outline-blue" id="attach-file">Прикрепить файл</button>
-                    <div class="w-100 d-lg-none"></div>
-                    <div class="show-input-name" id="input-info-file-name">
-                        <span class="file-name">brifnasozdaniesaita.xls</span>
-                        <button class="btn-icon" id="clear-input" onclick="clearInput">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 10.538L7.408 5.9905L11.954 1.4035L10.538 0L5.993 4.5895L1.405 0.0455L0 1.4505L4.593 6.003L0.0455 10.595L1.4505 12L6.0065 7.404L10.5965 11.954L12 10.538Z"
-                                      fill="black"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
                 <h5 class="display-5">Контактные данные</h5>
-                <div class="input-container contacts">
+                <div class="input-container inputs-requests">
                     <div class="form-container">
                         <label for="name">Имя</label>
                         <input type="text" placeholder="Александр Петрович" id="name" required>
@@ -183,6 +126,28 @@
                         <input type="text" id="tel" placeholder="+7 (999) 999-99-99"
                                data-inputmask="'mask': '+7 (999) 999-99-99'" required>
                         <span class="error-msg">некорректно заполнено поле</span>
+                    </div>
+                </div>
+
+                <div class="input-container inputs-requests">
+                    <div class="form-container">
+                        <label for="msg">Сообщение</label>
+                        <textarea rows="7" id="msg"></textarea>
+                    </div>
+                </div>
+                <div class="input-file-container">
+                    <input type="file" id="input-info-file">
+                    <button class="button btn-s btn-outline-blue" id="attach-file">Прикрепить файл</button>
+                    <div class="w-100 d-lg-none"></div>
+                    <div class="show-input-name" id="input-info-file-name">
+                        <span class="file-name">brifnasozdaniesaita.xls</span>
+                        <button class="btn-icon" id="clear-input" onclick="clearInput">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 10.538L7.408 5.9905L11.954 1.4035L10.538 0L5.993 4.5895L1.405 0.0455L0 1.4505L4.593 6.003L0.0455 10.595L1.4505 12L6.0065 7.404L10.5965 11.954L12 10.538Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="send-container">

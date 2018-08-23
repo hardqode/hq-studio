@@ -626,7 +626,7 @@ body.black-themed .menu-modal-section {
     margin-bottom: 18px; }
   @media (min-width: 991px) {
     .brief-section .brief-content .input-container {
-      max-width: 422px; } }
+      max-width: 424px; } }
   .brief-section .brief-content .input-container textarea {
     margin-bottom: 5px; }
   .brief-section .brief-content .input-container.contacts {
@@ -634,6 +634,12 @@ body.black-themed .menu-modal-section {
     @media (min-width: 992px) {
       .brief-section .brief-content .input-container.contacts {
         margin-bottom: 74px; } }
+  .brief-section .brief-content .input-container.inputs-requests:first-of-type {
+    margin-bottom: 34px; }
+  .brief-section .brief-content .input-container.inputs-requests .form-container {
+    margin-bottom: 16px; }
+    .brief-section .brief-content .input-container.inputs-requests .form-container textarea {
+      margin-bottom: 11px; }
   .brief-section .send-container {
     display: flex;
     flex-wrap: wrap; }
@@ -674,7 +680,7 @@ body.black-themed .menu-modal-section {
     border: 1px dotted #3764EB;
     border-radius: 2px;
     cursor: pointer;
-    transition: background-color,color .1s; }
+    transition: background-color, color .1s; }
     .checkbox-custom-block label:hover {
       border: 1px solid #3764EB; }
 
