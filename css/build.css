@@ -349,7 +349,8 @@ body.black-themed .menu-modal-section {
     max-width: 100%;
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    transition: transform .3s; }
   .project-item h5 {
     transition: all .2s;
     margin-bottom: 0; }

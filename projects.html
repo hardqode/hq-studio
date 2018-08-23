@@ -94,54 +94,54 @@
             <div class="col-12">
                 <h1 class="display-1">Наши работы</h1>
             </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class="project-item fluid">
-                        <img src="./assets/projects/timerman.png" alt="" class="project-item--img hover-parallax">
-                        <h5 class="display-5">Timerman</h5>
-                        <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
-                    </div>
+                <div class="project-item fluid">
+                    <img src="./assets/projects/timerman.png" alt="" class="project-item--img hover-parallax">
+                    <h5 class="display-5">Timerman</h5>
+                    <p class="display-p descriptor">сайт с личным кабинетом для спортивных мероприятий</p>
                 </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            </div>
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class="project-item fluid">
-                        <img src="./assets/projects/sensey.png" alt="" class="project-item--img">
-                        <h5 class="display-5">Sensey</h5>
-                        <p class="display-p descriptor">сервис оформления ипотеки онлайн</p>
-                    </div>
+                <div class="project-item fluid">
+                    <img src="./assets/projects/sensey.png" alt="" class="project-item--img">
+                    <h5 class="display-5">Sensey</h5>
+                    <p class="display-p descriptor">сервис оформления ипотеки онлайн</p>
                 </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            </div>
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class="project-item fluid">
-                        <img src="./assets/projects/vr.png" alt="" class="project-item--img">
-                        <h5 class="display-5">ВместоРиэлтора</h5>
-                        <p class="display-p descriptor">сайт сервиса продажи квартиры</p>
-                    </div>
+                <div class="project-item fluid">
+                    <img src="./assets/projects/vr.png" alt="" class="project-item--img">
+                    <h5 class="display-5">ВместоРиэлтора</h5>
+                    <p class="display-p descriptor">сайт сервиса продажи квартиры</p>
                 </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            </div>
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class=" project-item fluid">
-                        <img src="./assets/projects/akbars.png" alt="" class="project-item--img">
-                        <h5 class="display-5">Ак Барс</h5>
-                        <p class="display-p descriptor">информационная система хоккейных школ академии «Ак Барс»</p>
-                    </div>
+                <div class=" project-item fluid">
+                    <img src="./assets/projects/akbars.png" alt="" class="project-item--img">
+                    <h5 class="display-5">Ак Барс</h5>
+                    <p class="display-p descriptor">информационная система хоккейных школ академии «Ак Барс»</p>
                 </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            </div>
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class=" project-item fluid">
-                        <img src="./assets/projects/aq.png" alt="" class="project-item--img">
-                        <h5 class="display-5">ArtQode</h5>
-                        <p class="display-p descriptor">сервис сравнение дизайна и вёрстки</p>
-                    </div>
+                <div class=" project-item fluid">
+                    <img src="./assets/projects/aq.png" alt="" class="project-item--img">
+                    <h5 class="display-5">ArtQode</h5>
+                    <p class="display-p descriptor">сервис сравнение дизайна и вёрстки</p>
                 </div>
-                <div class="col-12 col-lg-6 project-item--container">
+            </div>
+            <div class="col-12 col-lg-6 project-item--container">
 
-                    <div class=" project-item fluid">
-                        <img src="./assets/projects/db.png" alt="" class="project-item--img">
-                        <h5 class="display-5">Dental Boutique</h5>
-                        <p class="display-p descriptor">сайт зуботехнической лаборатории</p>
-                    </div>
+                <div class=" project-item fluid">
+                    <img src="./assets/projects/db.png" alt="" class="project-item--img">
+                    <h5 class="display-5">Dental Boutique</h5>
+                    <p class="display-p descriptor">сайт зуботехнической лаборатории</p>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -226,24 +226,7 @@
 </footer>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
-
-<script>
-//hovering tiles
-    $('.hover-parallax').on('mousemove',function (e) {
-        var parentOffset = $(this).parent().offset();
-        $(this).css('transform','scale(1)');
-        var relX = e.pageX - parentOffset.left;
-        var relY = e.pageY - parentOffset.top;
-        console.log(parentOffset)
-        console.log(relX)
-        console.log(relY)
-
-    }
-    // ,function () {
-    //     $(this).css('transform','scale(1)');
-    // }
-    )
-</script>
+<script src="js/floating-tiles.js"></script>
 <script src="./js/menu-scripts.js"></script>
 </body>
 </html>
