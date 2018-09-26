@@ -13,6 +13,11 @@ body.modal-open{
   position: fixed;
 
 }
+#menu-umschool-img{
+  @media(min-width: 991px){
+    max-width: 373px;
+  }
+}
 body.black-themed{
   color: white;
   background-color: $blackBG;

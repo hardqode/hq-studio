@@ -7,6 +7,10 @@ body.modal-open {
   width: 100%;
   position: fixed; }
 
+@media (min-width: 991px) {
+  #menu-umschool-img {
+    max-width: 373px; } }
+
 body.black-themed {
   color: white;
   background-color: #17181B; }
