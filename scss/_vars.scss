@@ -20,6 +20,13 @@ body.black-themed{
 body.white-themed{
   color: $black;
   background-color: white;
+  &.dental{
+    background-color: #E5E5E5;
+
+  }
+  &.timer{
+    background-color: #F7F7F7;
+  }
 }
 .container{
   @media (max-width: 991px) {

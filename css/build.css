@@ -14,6 +14,10 @@ body.black-themed {
 body.white-themed {
   color: #1a1a1a;
   background-color: white; }
+  body.white-themed.dental {
+    background-color: #E5E5E5; }
+  body.white-themed.timer {
+    background-color: #F7F7F7; }
 
 @media (max-width: 991px) {
   .container {
